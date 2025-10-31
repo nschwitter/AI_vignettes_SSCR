@@ -71,13 +71,3 @@ yline(0, lcolor(gs12))
 
 
 
-//Table for open statements
-import excel "reshaped_export.xls", sheet("Sheet1"), firstrow replace
-
-tab generallyreal, miss
-
-foreach var of varlist _all {
-    tab `var', miss
-}
-
-
